@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "good-rag",
+  "main": "src/server/index.ts",
+  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_date": "2025-01-23",
+  "assets": {
+    "directory": "public"
+  },
+  "build": {
+    "command": "esbuild src/client/index.tsx --bundle --outdir=public/dist --sourcemap --target=esnext --format=esm --platform=browser"
+  }
+}
