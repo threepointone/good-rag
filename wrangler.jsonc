@@ -9,5 +9,21 @@
   },
   "build": {
     "command": "esbuild src/client/index.tsx --bundle --outdir=public/dist --sourcemap --target=esnext --format=esm --platform=browser"
-  }
+  },
+  "ai": {
+    "binding": "ai"
+  },
+  "vectorize": [
+    {
+      "binding": "VECTORIZE",
+      "index_name": "arxiv-abstracts"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "arxiv-abstracts",
+      "database_id": "0479b627-0029-4c6e-9bc5-8a854ca24ba7"
+    }
+  ]
 }
